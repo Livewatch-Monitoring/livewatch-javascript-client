@@ -35,7 +35,7 @@
   /**
    * The Account model module.
    * @module LivewatchApi/model/Account
-   * @version 1.0.3
+   * @version 1.0.4
    */
 
   /**

@@ -35,7 +35,7 @@
   /**
    * The ApiToken model module.
    * @module LivewatchApi/model/ApiToken
-   * @version 1.0.3
+   * @version 1.0.4
    */
 
   /**

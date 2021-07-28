@@ -3,10 +3,10 @@
 LivewatchApi - JavaScript client for LivewatchApi
 Livewatch Server Monitoring API
 
-[![Livewatch Server Monitoring](assets/logo.png)](https://www.livewatch.de)
+[![Livewatch Server Monitoring](https://www.livewatch.de/build/media/external/logo.png)](https://www.livewatch.de)
 
 - API version: 1.0.0
-- Package version: 1.0.3
+- Package version: 1.0.4
 - Build package: org.openapitools.codegen.languages.JavascriptClientCodegen
 For more information, please visit [https://www.livewatch.de](https://www.livewatch.de)
 

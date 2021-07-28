@@ -33,7 +33,7 @@
   /**
    * User service.
    * @module LivewatchApi/api/UserApi
-   * @version 1.0.3
+   * @version 1.0.4
    */
 
   /**
