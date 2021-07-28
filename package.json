@@ -1,5 +1,5 @@
 {
-  "name": "livewatch-monitoring/livewatch-javascript-client",
+  "name": "@livewatch-monitoring/livewatch-api",
   "version": "1.0.0",
   "description": "Livewatch Server Monitoring API",
   "license": "MIT",

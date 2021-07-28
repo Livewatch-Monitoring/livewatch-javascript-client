@@ -16,9 +16,7 @@ For more information, please visit [https://www.livewatch.de](https://www.livewa
 
 #### npm
 
-To publish the library as a [npm](https://www.npmjs.com/), please follow the procedure in ["Publishing npm packages"](https://docs.npmjs.com/getting-started/publishing-npm-packages).
-
-Then install it via:
+Install it via:
 
 ```shell
 npm install livewatch_api --save
@@ -26,7 +24,7 @@ npm install livewatch_api --save
 
 ##### Local development
 
-To use the library locally without publishing to a remote npm registry, first install the dependencies by changing into the directory containing `package.json` (and this README). Let's call this `JAVASCRIPT_CLIENT_DIR`. Then run:
+To use the library locally, first install the dependencies by changing into the directory containing `package.json` (and this README). Let's call this `JAVASCRIPT_CLIENT_DIR`. Then run:
 
 ```shell
 npm install
@@ -48,11 +46,10 @@ You should now be able to `require('livewatch_api')` in javascript files from th
 
 ### git
 
-If the library is hosted at a git repository, e.g. https://github.com/livewatch-monitoring/livewatch-javascript-client
-then install it via:
+Install it via:
 
 ```shell
-    npm install livewatch-monitoring/livewatch-javascript-client --save
+npm install livewatch-monitoring/livewatch-javascript-client --save
 ```
 
 ### For browser
