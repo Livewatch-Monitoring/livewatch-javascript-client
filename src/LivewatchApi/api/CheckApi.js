@@ -36,7 +36,7 @@
   /**
    * Check service.
    * @module LivewatchApi/api/CheckApi
-   * @version 1.0.5
+   * @version 1.0.6
    */
 
   /**
@@ -135,6 +135,51 @@
       var returnType = [Check];
       return this.apiClient.callApi(
         '/api/check/list/{page}', 'GET',
+        pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the checkReport operation.
+     * @callback module:LivewatchApi/api/CheckApi~checkReportCallback
+     * @param {String} error Error message, if any.
+     * @param {module:LivewatchApi/model/Check} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * Get details of one check
+     * Retrieve information about one check
+     * @param {String} uuid 
+     * @param {module:LivewatchApi/api/CheckApi~checkReportCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:LivewatchApi/model/Check}
+     */
+    this.checkReport = function(uuid, callback) {
+      var postBody = null;
+      // verify the required parameter 'uuid' is set
+      if (uuid === undefined || uuid === null) {
+        throw new Error("Missing the required parameter 'uuid' when calling checkReport");
+      }
+
+      var pathParams = {
+        'uuid': uuid
+      };
+      var queryParams = {
+      };
+      var collectionQueryParams = {
+      };
+      var headerParams = {
+      };
+      var formParams = {
+      };
+
+      var authNames = ['LivewatchToken'];
+      var contentTypes = [];
+      var accepts = ['application/json'];
+      var returnType = Check;
+      return this.apiClient.callApi(
+        '/api/check/report/{uuid}', 'GET',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );

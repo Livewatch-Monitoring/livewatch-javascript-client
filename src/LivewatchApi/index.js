@@ -19,12 +19,12 @@
 (function(factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['LivewatchApi/ApiClient', 'LivewatchApi/model/Account', 'LivewatchApi/model/ApiToken', 'LivewatchApi/model/Check', 'LivewatchApi/model/MonitoringIp', 'LivewatchApi/api/AccountApi', 'LivewatchApi/api/CheckApi', 'LivewatchApi/api/GeneralApi', 'LivewatchApi/api/UserApi'], factory);
+    define(['LivewatchApi/ApiClient', 'LivewatchApi/model/Account', 'LivewatchApi/model/ApiToken', 'LivewatchApi/model/Check', 'LivewatchApi/model/CheckReport', 'LivewatchApi/model/MonitoringIp', 'LivewatchApi/api/AccountApi', 'LivewatchApi/api/CheckApi', 'LivewatchApi/api/GeneralApi', 'LivewatchApi/api/UserApi'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('./ApiClient'), require('./model/Account'), require('./model/ApiToken'), require('./model/Check'), require('./model/MonitoringIp'), require('./api/AccountApi'), require('./api/CheckApi'), require('./api/GeneralApi'), require('./api/UserApi'));
+    module.exports = factory(require('./ApiClient'), require('./model/Account'), require('./model/ApiToken'), require('./model/Check'), require('./model/CheckReport'), require('./model/MonitoringIp'), require('./api/AccountApi'), require('./api/CheckApi'), require('./api/GeneralApi'), require('./api/UserApi'));
   }
-}(function(ApiClient, Account, ApiToken, Check, MonitoringIp, AccountApi, CheckApi, GeneralApi, UserApi) {
+}(function(ApiClient, Account, ApiToken, Check, CheckReport, MonitoringIp, AccountApi, CheckApi, GeneralApi, UserApi) {
   'use strict';
 
   /**
@@ -56,7 +56,7 @@
    * </pre>
    * </p>
    * @module LivewatchApi/index
-   * @version 1.0.5
+   * @version 1.0.6
    */
   var exports = {
     /**
@@ -79,6 +79,11 @@
      * @property {module:LivewatchApi/model/Check}
      */
     Check: Check,
+    /**
+     * The CheckReport model constructor.
+     * @property {module:LivewatchApi/model/CheckReport}
+     */
+    CheckReport: CheckReport,
     /**
      * The MonitoringIp model constructor.
      * @property {module:LivewatchApi/model/MonitoringIp}

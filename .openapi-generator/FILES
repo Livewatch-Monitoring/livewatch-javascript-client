@@ -7,6 +7,7 @@ docs/AccountApi.md
 docs/ApiToken.md
 docs/Check.md
 docs/CheckApi.md
+docs/CheckReport.md
 docs/GeneralApi.md
 docs/MonitoringIp.md
 docs/UserApi.md
@@ -22,4 +23,5 @@ src/LivewatchApi/index.js
 src/LivewatchApi/model/Account.js
 src/LivewatchApi/model/ApiToken.js
 src/LivewatchApi/model/Check.js
+src/LivewatchApi/model/CheckReport.js
 src/LivewatchApi/model/MonitoringIp.js

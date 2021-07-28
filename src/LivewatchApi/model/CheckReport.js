@@ -28,7 +28,7 @@
     if (!root.LivewatchApi) {
       root.LivewatchApi = {};
     }
-    root.LivewatchApi.Account = factory(root.LivewatchApi.ApiClient);
+    root.LivewatchApi.CheckReport = factory(root.LivewatchApi.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
@@ -36,14 +36,14 @@
 
 
   /**
-   * The Account model module.
-   * @module LivewatchApi/model/Account
+   * The CheckReport model module.
+   * @module LivewatchApi/model/CheckReport
    * @version 1.0.6
    */
 
   /**
-   * Constructs a new <code>Account</code>.
-   * @alias module:LivewatchApi/model/Account
+   * Constructs a new <code>CheckReport</code>.
+   * @alias module:LivewatchApi/model/CheckReport
    * @class
    */
   var exports = function() {
@@ -52,47 +52,40 @@
   };
 
   /**
-   * Constructs a <code>Account</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>CheckReport</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:LivewatchApi/model/Account} obj Optional instance to populate.
-   * @return {module:LivewatchApi/model/Account} The populated <code>Account</code> instance.
+   * @param {module:LivewatchApi/model/CheckReport} obj Optional instance to populate.
+   * @return {module:LivewatchApi/model/CheckReport} The populated <code>CheckReport</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
-      if (data.hasOwnProperty('uuid')) {
-        obj['uuid'] = ApiClient.convertToType(data['uuid'], 'String');
+      if (data.hasOwnProperty('count')) {
+        obj['count'] = ApiClient.convertToType(data['count'], 'Number');
       }
-      if (data.hasOwnProperty('credit')) {
-        obj['credit'] = ApiClient.convertToType(data['credit'], 'Number');
+      if (data.hasOwnProperty('avg_check_time')) {
+        obj['avg_check_time'] = ApiClient.convertToType(data['avg_check_time'], 'Number');
       }
-      if (data.hasOwnProperty('credit_warn_limit')) {
-        obj['credit_warn_limit'] = ApiClient.convertToType(data['credit_warn_limit'], 'Number');
-      }
-      if (data.hasOwnProperty('notification_enabled')) {
-        obj['notification_enabled'] = ApiClient.convertToType(data['notification_enabled'], 'Boolean');
+      if (data.hasOwnProperty('type')) {
+        obj['type'] = ApiClient.convertToType(data['type'], 'String');
       }
     }
     return obj;
   }
 
   /**
-   * @member {String} uuid
+   * @member {Number} count
    */
-  exports.prototype['uuid'] = undefined;
+  exports.prototype['count'] = undefined;
   /**
-   * @member {Number} credit
+   * @member {Number} avg_check_time
    */
-  exports.prototype['credit'] = undefined;
+  exports.prototype['avg_check_time'] = undefined;
   /**
-   * @member {Number} credit_warn_limit
+   * @member {String} type
    */
-  exports.prototype['credit_warn_limit'] = undefined;
-  /**
-   * @member {Boolean} notification_enabled
-   */
-  exports.prototype['notification_enabled'] = undefined;
+  exports.prototype['type'] = undefined;
 
 
 
