@@ -33,7 +33,7 @@
   /**
    * Check service.
    * @module LivewatchApi/api/CheckApi
-   * @version 1.0.2
+   * @version 1.0.3
    */
 
   /**

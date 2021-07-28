@@ -1,12 +1,12 @@
-# livewatch_api
+# Livewatch Server Monitoring API
 
-LivewatchApi - JavaScript client for livewatch_api
+LivewatchApi - JavaScript client for LivewatchApi
 Livewatch Server Monitoring API
 
 [![Livewatch Server Monitoring](assets/logo.png)](https://www.livewatch.de)
 
 - API version: 1.0.0
-- Package version: 1.0.2
+- Package version: 1.0.3
 - Build package: org.openapitools.codegen.languages.JavascriptClientCodegen
 For more information, please visit [https://www.livewatch.de](https://www.livewatch.de)
 
@@ -19,7 +19,7 @@ For more information, please visit [https://www.livewatch.de](https://www.livewa
 Install it via:
 
 ```shell
-npm install livewatch_api --save
+npm install @livewatch-monitoring/livewatch-api --save
 ```
 
 ##### Local development
@@ -36,13 +36,13 @@ Next, [link](https://docs.npmjs.com/cli/link) it globally in npm with the follow
 npm link
 ```
 
-Finally, switch to the directory you want to use your livewatch_api from, and run:
+Finally, switch to the directory you want to use your @livewatch-monitoring/livewatch-api from, and run:
 
 ```shell
 npm link /path/to/<JAVASCRIPT_CLIENT_DIR>
 ```
 
-You should now be able to `require('livewatch_api')` in javascript files from the directory you ran the last command above from.
+You should now be able to `require('@livewatch-monitoring/livewatch-api')` in javascript files from the directory you ran the last command above from.
 
 ### git
 
@@ -90,7 +90,7 @@ After registration you will find your personal API token at https://www.livewatc
 Please follow the [installation](#installation) instruction and execute the following JS code:
 
 ```javascript
-var LivewatchApi = require('livewatch_api');
+var LivewatchApi = require('@livewatch-monitoring/livewatch-api');
 
 var defaultClient = LivewatchApi.ApiClient.instance;
 // Configure API key authorization: LivewatchToken

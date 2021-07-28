@@ -35,7 +35,7 @@
   /**
    * The MonitoringIp model module.
    * @module LivewatchApi/model/MonitoringIp
-   * @version 1.0.2
+   * @version 1.0.3
    */
 
   /**

@@ -35,7 +35,7 @@
   /**
    * The Check model module.
    * @module LivewatchApi/model/Check
-   * @version 1.0.2
+   * @version 1.0.3
    */
 
   /**
