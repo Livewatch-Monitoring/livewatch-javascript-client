@@ -6,7 +6,7 @@ Livewatch Server Monitoring API
 [![Livewatch Server Monitoring](https://www.livewatch.de/build/media/external/logo.png)](https://www.livewatch.de)
 
 - API version: 1.0.0
-- Package version: 1.0.4
+- Package version: 1.0.5
 - Build package: org.openapitools.codegen.languages.JavascriptClientCodegen
 For more information, please visit [https://www.livewatch.de](https://www.livewatch.de)
 
