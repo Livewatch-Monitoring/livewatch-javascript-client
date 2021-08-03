@@ -25,4 +25,3 @@ src/LivewatchApi/model/ApiToken.js
 src/LivewatchApi/model/Check.js
 src/LivewatchApi/model/CheckStats.js
 src/LivewatchApi/model/MonitoringIp.js
-test/LivewatchApi/model/CheckStats.spec.js
