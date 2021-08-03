@@ -19,18 +19,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['LivewatchApi/ApiClient', 'LivewatchApi/model/Check'], factory);
+    define(['LivewatchApi/ApiClient', 'LivewatchApi/model/Check', 'LivewatchApi/model/CheckStats'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../model/Check'));
+    module.exports = factory(require('../ApiClient'), require('../model/Check'), require('../model/CheckStats'));
   } else {
     // Browser globals (root is window)
     if (!root.LivewatchApi) {
       root.LivewatchApi = {};
     }
-    root.LivewatchApi.CheckApi = factory(root.LivewatchApi.ApiClient, root.LivewatchApi.Check);
+    root.LivewatchApi.CheckApi = factory(root.LivewatchApi.ApiClient, root.LivewatchApi.Check, root.LivewatchApi.CheckStats);
   }
-}(this, function(ApiClient, Check) {
+}(this, function(ApiClient, Check, CheckStats) {
   'use strict';
 
   /**
@@ -144,16 +144,16 @@
      * Callback function to receive the result of the checkReport operation.
      * @callback module:LivewatchApi/api/CheckApi~checkReportCallback
      * @param {String} error Error message, if any.
-     * @param {module:LivewatchApi/model/Check} data The data returned by the service call.
+     * @param {Array.<module:LivewatchApi/model/CheckStats>} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
-     * Get details of one check
-     * Retrieve information about one check
+     * Get report of one check
+     * Retrieve reporting information about one check
      * @param {String} uuid 
      * @param {module:LivewatchApi/api/CheckApi~checkReportCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:LivewatchApi/model/Check}
+     * data is of type: {@link Array.<module:LivewatchApi/model/CheckStats>}
      */
     this.checkReport = function(uuid, callback) {
       var postBody = null;
@@ -177,7 +177,7 @@
       var authNames = ['LivewatchToken'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = Check;
+      var returnType = [CheckStats];
       return this.apiClient.callApi(
         '/api/check/report/{uuid}', 'GET',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,

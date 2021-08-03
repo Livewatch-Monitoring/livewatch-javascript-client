@@ -19,18 +19,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['LivewatchApi/ApiClient', 'LivewatchApi/model/CheckReport'], factory);
+    define(['LivewatchApi/ApiClient', 'LivewatchApi/model/CheckStats'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./CheckReport'));
+    module.exports = factory(require('../ApiClient'), require('./CheckStats'));
   } else {
     // Browser globals (root is window)
     if (!root.LivewatchApi) {
       root.LivewatchApi = {};
     }
-    root.LivewatchApi.Check = factory(root.LivewatchApi.ApiClient, root.LivewatchApi.CheckReport);
+    root.LivewatchApi.Check = factory(root.LivewatchApi.ApiClient, root.LivewatchApi.CheckStats);
   }
-}(this, function(ApiClient, CheckReport) {
+}(this, function(ApiClient, CheckStats) {
   'use strict';
 
 
@@ -80,7 +80,7 @@
         obj['status'] = ApiClient.convertToType(data['status'], 'Number');
       }
       if (data.hasOwnProperty('stats')) {
-        obj['stats'] = ApiClient.convertToType(data['stats'], [CheckReport]);
+        obj['stats'] = ApiClient.convertToType(data['stats'], [CheckStats]);
       }
       if (data.hasOwnProperty('checkType')) {
         obj['checkType'] = ApiClient.convertToType(data['checkType'], 'String');
@@ -117,7 +117,7 @@
    */
   exports.prototype['status'] = undefined;
   /**
-   * @member {Array.<module:LivewatchApi/model/CheckReport>} stats
+   * @member {Array.<module:LivewatchApi/model/CheckStats>} stats
    */
   exports.prototype['stats'] = undefined;
   /**

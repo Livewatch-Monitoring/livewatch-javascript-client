@@ -121,7 +121,7 @@ Class | Method | HTTP request | Description
 *LivewatchApi.AccountApi* | [**accountDetails**](docs/AccountApi.md#accountDetails) | **GET** /api/account | Get Account details
 *LivewatchApi.CheckApi* | [**checkDetails**](docs/CheckApi.md#checkDetails) | **GET** /api/check/details/{uuid} | Get details of one check
 *LivewatchApi.CheckApi* | [**checkList**](docs/CheckApi.md#checkList) | **GET** /api/check/list/{page} | List all your checks configured
-*LivewatchApi.CheckApi* | [**checkReport**](docs/CheckApi.md#checkReport) | **GET** /api/check/report/{uuid} | Get details of one check
+*LivewatchApi.CheckApi* | [**checkReport**](docs/CheckApi.md#checkReport) | **GET** /api/check/report/{uuid} | Get report of one check
 *LivewatchApi.CheckApi* | [**setCheckState**](docs/CheckApi.md#setCheckState) | **POST** /api/check/enable/{uuid}/{state} | Enable or disable a check
 *LivewatchApi.GeneralApi* | [**listMonitoringIPs**](docs/GeneralApi.md#listMonitoringIPs) | **GET** /api/general/listMonitoringIPs | List all our IPs with details
 *LivewatchApi.UserApi* | [**apiTokenDetails**](docs/UserApi.md#apiTokenDetails) | **POST** /api/user/token | Get your API-Token
@@ -132,7 +132,7 @@ Class | Method | HTTP request | Description
  - [LivewatchApi.Account](docs/Account.md)
  - [LivewatchApi.ApiToken](docs/ApiToken.md)
  - [LivewatchApi.Check](docs/Check.md)
- - [LivewatchApi.CheckReport](docs/CheckReport.md)
+ - [LivewatchApi.CheckStats](docs/CheckStats.md)
  - [LivewatchApi.MonitoringIp](docs/MonitoringIp.md)
 
 

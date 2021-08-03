@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **lastUpdate** | **String** |  | [optional] 
 **active** | **Boolean** |  | [optional] 
 **status** | **Number** |  | [optional] 
-**stats** | [**[CheckReport]**](CheckReport.md) |  | [optional] 
+**stats** | [**[CheckStats]**](CheckStats.md) |  | [optional] 
 **checkType** | **String** |  | [optional] 
 **lastUpdate** | **String** |  | [optional] 
 
