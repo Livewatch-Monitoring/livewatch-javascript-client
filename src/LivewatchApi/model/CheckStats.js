@@ -38,7 +38,7 @@
   /**
    * The CheckStats model module.
    * @module LivewatchApi/model/CheckStats
-   * @version 1.0.7
+   * @version 1.0.8
    */
 
   /**

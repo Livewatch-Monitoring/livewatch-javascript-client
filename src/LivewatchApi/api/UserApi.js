@@ -36,7 +36,7 @@
   /**
    * User service.
    * @module LivewatchApi/api/UserApi
-   * @version 1.0.7
+   * @version 1.0.8
    */
 
   /**

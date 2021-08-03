@@ -36,7 +36,7 @@
   /**
    * General service.
    * @module LivewatchApi/api/GeneralApi
-   * @version 1.0.7
+   * @version 1.0.8
    */
 
   /**

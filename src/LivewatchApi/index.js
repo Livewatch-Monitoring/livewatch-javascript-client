@@ -56,7 +56,7 @@
    * </pre>
    * </p>
    * @module LivewatchApi/index
-   * @version 1.0.7
+   * @version 1.0.8
    */
   var exports = {
     /**
