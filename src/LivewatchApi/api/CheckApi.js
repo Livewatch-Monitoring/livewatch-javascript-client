@@ -186,6 +186,55 @@
     }
 
     /**
+     * Callback function to receive the result of the checksByTag operation.
+     * @callback module:LivewatchApi/api/CheckApi~checksByTagCallback
+     * @param {String} error Error message, if any.
+     * @param {Array.<module:LivewatchApi/model/Check>} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * Get report of one check
+     * Retrieve checks by tag
+     * @param {String} tags Comma seperated tags to search for
+     * @param {Object} opts Optional parameters
+     * @param {Number} opts.statDays History range in days
+     * @param {module:LivewatchApi/api/CheckApi~checksByTagCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link Array.<module:LivewatchApi/model/Check>}
+     */
+    this.checksByTag = function(tags, opts, callback) {
+      opts = opts || {};
+      var postBody = null;
+      // verify the required parameter 'tags' is set
+      if (tags === undefined || tags === null) {
+        throw new Error("Missing the required parameter 'tags' when calling checksByTag");
+      }
+
+      var pathParams = {
+      };
+      var queryParams = {
+        'tags': tags,
+        'stat_days': opts['statDays'],
+      };
+      var collectionQueryParams = {
+      };
+      var headerParams = {
+      };
+      var formParams = {
+      };
+
+      var authNames = ['LivewatchToken'];
+      var contentTypes = [];
+      var accepts = ['application/json'];
+      var returnType = [Check];
+      return this.apiClient.callApi(
+        '/api/check/checks/tag', 'POST',
+        pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
      * Callback function to receive the result of the setCheckState operation.
      * @callback module:LivewatchApi/api/CheckApi~setCheckStateCallback
      * @param {String} error Error message, if any.
