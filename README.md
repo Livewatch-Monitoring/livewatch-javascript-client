@@ -6,7 +6,7 @@ Livewatch Server Monitoring API
 [![Livewatch Server Monitoring](https://www.livewatch.de/build/media/external/logo.png)](https://www.livewatch.de)
 
 - API version: 1.0.0
-- Package version: 1.0.8
+- Package version: 1.1.2
 - Build package: org.openapitools.codegen.languages.JavascriptClientCodegen
 For more information, please visit [https://www.livewatch.de](https://www.livewatch.de)
 
@@ -119,10 +119,14 @@ All URIs are relative to *https://www.livewatch.de*
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *LivewatchApi.AccountApi* | [**accountDetails**](docs/AccountApi.md#accountDetails) | **GET** /api/account | Get Account details
+*LivewatchApi.CheckApi* | [**allCheckNotifications**](docs/CheckApi.md#allCheckNotifications) | **GET** /api/check/notifications | Get notifications of all checks
 *LivewatchApi.CheckApi* | [**checkDetails**](docs/CheckApi.md#checkDetails) | **GET** /api/check/details/{uuid} | Get details of one check
+*LivewatchApi.CheckApi* | [**checkEventsByDate**](docs/CheckApi.md#checkEventsByDate) | **POST** /api/check/check/events/{uuid} | Get events of one check by date
+*LivewatchApi.CheckApi* | [**checkHistory**](docs/CheckApi.md#checkHistory) | **GET** /api/check/latest/{uuid} | Get history of one check
 *LivewatchApi.CheckApi* | [**checkList**](docs/CheckApi.md#checkList) | **GET** /api/check/list/{page} | List all your checks configured
+*LivewatchApi.CheckApi* | [**checkNotifications**](docs/CheckApi.md#checkNotifications) | **GET** /api/check/notifications/{uuid} | Get notifications of one check
 *LivewatchApi.CheckApi* | [**checkReport**](docs/CheckApi.md#checkReport) | **GET** /api/check/report/{uuid} | Get report of one check
-*LivewatchApi.CheckApi* | [**checksByTag**](docs/CheckApi.md#checksByTag) | **POST** /api/check/checks/tag | Get report of one check
+*LivewatchApi.CheckApi* | [**checksByTag**](docs/CheckApi.md#checksByTag) | **POST** /api/check/checks/tag | Get report of checks by Tag
 *LivewatchApi.CheckApi* | [**setCheckState**](docs/CheckApi.md#setCheckState) | **POST** /api/check/enable/{uuid}/{state} | Enable or disable a check
 *LivewatchApi.GeneralApi* | [**listMonitoringIPs**](docs/GeneralApi.md#listMonitoringIPs) | **GET** /api/general/listMonitoringIPs | List all our IPs with details
 *LivewatchApi.UserApi* | [**apiTokenDetails**](docs/UserApi.md#apiTokenDetails) | **POST** /api/user/token | Get your API-Token
@@ -133,7 +137,11 @@ Class | Method | HTTP request | Description
  - [LivewatchApi.Account](docs/Account.md)
  - [LivewatchApi.ApiToken](docs/ApiToken.md)
  - [LivewatchApi.Check](docs/Check.md)
+ - [LivewatchApi.CheckEvent](docs/CheckEvent.md)
+ - [LivewatchApi.CheckHistory](docs/CheckHistory.md)
+ - [LivewatchApi.CheckNotification](docs/CheckNotification.md)
  - [LivewatchApi.CheckStats](docs/CheckStats.md)
+ - [LivewatchApi.Contact](docs/Contact.md)
  - [LivewatchApi.MonitoringIp](docs/MonitoringIp.md)
 
 

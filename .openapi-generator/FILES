@@ -7,7 +7,11 @@ docs/AccountApi.md
 docs/ApiToken.md
 docs/Check.md
 docs/CheckApi.md
+docs/CheckEvent.md
+docs/CheckHistory.md
+docs/CheckNotification.md
 docs/CheckStats.md
+docs/Contact.md
 docs/GeneralApi.md
 docs/MonitoringIp.md
 docs/UserApi.md
@@ -23,5 +27,13 @@ src/LivewatchApi/index.js
 src/LivewatchApi/model/Account.js
 src/LivewatchApi/model/ApiToken.js
 src/LivewatchApi/model/Check.js
+src/LivewatchApi/model/CheckEvent.js
+src/LivewatchApi/model/CheckHistory.js
+src/LivewatchApi/model/CheckNotification.js
 src/LivewatchApi/model/CheckStats.js
+src/LivewatchApi/model/Contact.js
 src/LivewatchApi/model/MonitoringIp.js
+test/LivewatchApi/model/CheckEvent.spec.js
+test/LivewatchApi/model/CheckHistory.spec.js
+test/LivewatchApi/model/CheckNotification.spec.js
+test/LivewatchApi/model/Contact.spec.js
